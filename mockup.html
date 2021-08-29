@@ -10,19 +10,28 @@
       rel="stylesheet"
     />
   </head>
-  <body class="">
+  <body class="bg-green-500 text-white">
     <section id="header" class="p-10">
       <span class="text-4xl">ALPACA IMAGE GENERATOR</span>
     </section>
     <section id="content" class="grid grid-cols-2">
-      <div id="result">
-        <div id="image"></div>
-        <div id="image_buttons" class="grid grid-cols-2">
-          <button>Download</button>
-          <button>Randomize</button>
+      <div id="result" class="p-5 flex flex-col flex-auto center">
+        <div id="image" class="relative h-full max-h-96 w-full flex flex-row justify-center ">
+          <img class="absolute max-h-full " src="src/assets/alpaca/backgrounds/blue50.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/neck/bend-backward.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/accessories/flower.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/eyes/angry.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/leg/bubble-tea.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/mouth/default.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/nose.png" alt="" srcset="">
+          <img class="absolute max-h-full " src="src/assets/alpaca/hair/bang.png" alt="" srcset="">
+        </div>
+        <div id="image_buttons" class="grid grid-cols-2 my-10">
+          <div class="flex flex-row justify-center"><button class="border bg-yellow-500 w-40 text-white p-3">Download</button></div>
+          <div class="flex flex-row justify-center"><button class="border bg-yellow-500 w-40 text-white p-3">Randomize</button></div>
         </div>
       </div>
-      <div id="controller" class="grid grid-rows-2 h-full">
+      <div id="controller" class="grid grid-rows-2 h-full p-5">
         <div id="category__selector" class="mb-6">
             <span class="text-xl">ACCESSORIZE THE ALPACAS</span>
             <div id="category__buttons" class="flex flex-row flex-wrap  my-3">
